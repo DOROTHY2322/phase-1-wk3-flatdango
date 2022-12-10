@@ -1,0 +1,24 @@
+{
+  "name": "phase-1-wk3-flatdango",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DOROTHY2322/phase-1-wk3-flatdango.git"
+  },
+  "keywords": [
+    "Css",
+    "Html",
+    "Js"
+  ],
+  "author": "Dorothy j",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DOROTHY2322/phase-1-wk3-flatdango/issues"
+  },
+  "homepage": "https://github.com/DOROTHY2322/phase-1-wk3-flatdango#readme"
+}
