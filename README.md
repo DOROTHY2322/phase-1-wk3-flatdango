@@ -72,6 +72,7 @@
    
      - After creting the project in which we have done so.
      - on your github go to settings.
+     Screenshot from 2022-12-11 16-42-45.png
      - scroll down to pages on your left.
      - select your branch in our case its the main branch,then save.
 
