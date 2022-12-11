@@ -48,7 +48,7 @@
 
         - npm install -g json-server
         
- - Create a db.json file with some data i.e in our case we are using flatacuties data
+ - Create a db.json file with some data i.e in our case we are using flatadango data
 
  - To start json server
 
@@ -58,12 +58,15 @@
 
      -  http://localhost:3000/films
 
+  # Running 
  # Project Setup
+
+ 
  # Authors
 
  - This project was contributed to by:
 
- - [DOROTHY JEBET]
+ - DOROTHY JEBET
 
 # License
 
