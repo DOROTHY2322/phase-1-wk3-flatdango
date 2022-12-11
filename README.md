@@ -2,7 +2,7 @@
 
 # Description
   
-  - This code challenge involves building a mini-app, ehich enables a a user book a movie ticket and be notified as to how many tickets are still available and sold out if no available tickets.
+  - This code challenge involves building a mini-app, which enables a a user book a movie ticket and be notified as to how many tickets are still available and sold out if no available tickets, also as the user can see the movie details i.e the runtime,title,poster.
 
   # Getting started
 
@@ -58,10 +58,28 @@
 
      -  http://localhost:3000/films
 
-  # Running 
+  
  # Project Setup
+ - In this case the project requires us to create a folder and name it to do that in your terminal
 
- 
+          - mkdir .....
+
+   - Create a db.json file
+
+            - touch db.json(or any alternative name)
+
+  - Also in this project you are required to host your project on github to do this: 
+   
+     - After creting the project in which we have done so.
+     - on your github go to settings.
+     - scroll down to pages on your left.
+     - select your branch in our case its the main branch,then save.
+
+
+
+
+
+       
  # Authors
 
  - This project was contributed to by:
