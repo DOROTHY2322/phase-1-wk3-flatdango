@@ -40,3 +40,21 @@
  - Take on the process in Alternative One above.
  - Repeat the steps in alternative one.  
 
+
+ # Running and installing Json server
+ - Ensure you have a node js version installed
+
+ - To install json server on your terminal
+
+        - npm install -g json-server
+        
+ - Create a db.json file with some data i.e in our case we are using flatacuties data
+
+ - To start json server
+
+        - json-server --watch db.json
+
+ - To ensure you have the json server intsalled
+
+        -  http://localhost:3000/films
+
