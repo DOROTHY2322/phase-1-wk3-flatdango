@@ -58,7 +58,19 @@
 
      -  http://localhost:3000/films
 
-  
+ # Running the application
+
+ - To run the application:
+
+ - Install required dependencies from npm
+
+        - npm install
+
+  - Run the application on terminal
+
+            - npm start
+
+
  # Project Setup
  - In this case the project requires us to create a folder and name it to do that in your terminal
 
@@ -71,14 +83,18 @@
   - Also in this project you are required to host your project on github to do this: 
    
    # Hosting on Github 
-   
+
      - After creting the project in which we have done so.
+
 
      - on your github go to settings.
 
+
      - scroll down to pages on your left.
 
+
      - select your branch in our case its the main branch,then save.
+     
 
 
 
