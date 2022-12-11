@@ -19,13 +19,17 @@
 
  - Clone the repo by using the following:
 
-      - git clone git@github.com:DOROTHY2322/phase-1-wk3-flatdango.git
+
+        - git clone git@github.com:DOROTHY2322/phase-1-wk3-flatdango.git
 
  - Change directory to the repo folder:
 
-      - cd git@github.com:DOROTHY2322/phase-1-wk3-flatdango.git
+
+        - cd git@github.com:DOROTHY2322/phase-1-wk3-flatdango.git
+
 
  - Open it in Visual Studio Code
 
-      - code .
+
+        - code .
 
