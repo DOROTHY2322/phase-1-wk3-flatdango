@@ -70,6 +70,8 @@
 
   - Also in this project you are required to host your project on github to do this: 
    
+   # Hosting on Github 
+   
      - After creting the project in which we have done so.
 
      - on your github go to settings.
