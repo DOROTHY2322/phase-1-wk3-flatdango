@@ -14,26 +14,22 @@
         <div class="container-fluid">
         </div>
         <div>
-            <span class="align-middle">
+
                 <h1><a class="navbar-brand text-dark" id="home-link">FLATDANGO</a></h1>
                 <h2><a class="navbar-brand text-dark">BUY MOVIE TICKETS</a></h2>
             </div>
-
-            </span>
-            
-        
- 
     </nav>
 
     <div class="container text-center">
        <div class="row align-items-start">
-         <div class="col">
-           MOVIES TITLE
+         <div class="col-md-3">
+           MOVIE TITLES
+           
            <ul class="ui divided list" id="films">
                <li class="film item">Movie titles will go here.</li>
              </ul>
          </div>
-         <div class="col">
+         <div class="col-md-3">
            POSTER
            <div class="picture">
                <img class="img-fluid" src="assets/placeholderImage.png" id="poster" alt="MOVIE TITLE"/>
@@ -42,17 +38,17 @@
          <div class="col">
         TICKET
           <div class="card">
-           <div id="title" class="title">[MOVIE TITLE]</div>
+           <div id="title" class="title">[MOVIE POSTER]</div>
            <div id="runtime" class="meta">[RUNTIME] minutes</div>
            <div class="content">
              <div class="description">
                <div id="film-info">[INSERT MOVIE DESCRIPTION HERE]</div>
                <span id="showtime" class="ui label">[SHOWTIME]</span>
-               <span id="ticket-num">[X]</span> remaining tickets
+               <span id="ticket-num">[l]</span> remaining tickets
              </div>
            </div>
            <div class="extra content">
-             <button id="buy-ticket" class="ui orange button">
+             <button type="button" class="btn btn-primary" id="buy-ticket" class="ui orange button">
                Buy Ticket
              </button>
            </div>
