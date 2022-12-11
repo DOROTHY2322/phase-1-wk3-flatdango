@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     fetchMovies(url)
 })
 
-//Create fetch function
+//fetch data from server
 function fetchMovies(url){
     fetch(url)
     .then(response => response.json())
@@ -15,8 +15,10 @@ function fetchMovies(url){
             displayMovie(movie)
         });
     })
+    addmovie(movieobj)
 }
-
+// post requests
+// displaying the movies
 function displayMovie(movie){
    
     const li = document.createElement('li')
@@ -25,7 +27,7 @@ function displayMovie(movie){
     listHolder.appendChild(li)
     addClickEvent()
 }
-
+// event listeners
 function addClickEvent(){
     let children=listHolder.children
     // console.log(children)
