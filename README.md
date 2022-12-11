@@ -56,5 +56,15 @@
 
  - To ensure you have the json server intsalled
 
-        -  http://localhost:3000/films
+     -  http://localhost:3000/films
 
+ # Project Setup
+ # Authors
+
+ - This project was contributed to by:
+
+ - [DOROTHY JEBET]
+
+# License
+
+- MIT LICENSE Copyright (c) 2022 DOROTHY2322
