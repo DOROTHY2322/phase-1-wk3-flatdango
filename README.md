@@ -12,5 +12,20 @@
        -  Json server
 
    # Installation
-    - To use the repo the following steps are required:
-    
+- To use the repo the following steps are required:
+ 
+  # Alternative One
+ - Open a terminal / command line interface on your computer
+
+ - Clone the repo by using the following:
+
+      - git clone git@github.com:DOROTHY2322/phase-1-wk3-flatdango.git
+
+ - Change directory to the repo folder:
+
+      - cd git@github.com:DOROTHY2322/phase-1-wk3-flatdango.git
+
+ - Open it in Visual Studio Code
+
+      - code .
+
