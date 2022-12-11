@@ -33,3 +33,10 @@
 
         - code .
 
+# Alternative Two
+
+ - On the top right corner of this page there is a button labelled Fork.
+ - Click on that button to fork the repo to your own account.
+ - Take on the process in Alternative One above.
+ - Repeat the steps in alternative one.  
+
