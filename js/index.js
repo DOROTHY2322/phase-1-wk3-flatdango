@@ -2,10 +2,11 @@
 let url = 'http://localhost:3000/films'
 const filmTime = document.getElementById('films')
 document.addEventListener('DOMContentLoaded', ()=>{
+    
     document.getElementsByClassName('film item')
     fetchMovies(url)
-})
-// event handlers
+
+    // event handlers
 function handleSubmit(e){
     e.preventDefault()
     let movieobj ={
@@ -38,7 +39,7 @@ function renderMovie(movie){
     </div>
 
     `
-    
+
 }
 //fetch data from server
 function fetchMovies(url){
@@ -126,3 +127,4 @@ const btn = document.getElementById('buy-ticket')
                 btn.textContent = 'Sold Out'
             }
     })
+})
