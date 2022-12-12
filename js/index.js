@@ -38,11 +38,7 @@ function renderMovie(movie){
     </div>
 
     `
-    card.querySelector('buy ticket').addEventListener('click', ()=>{
-      movie.tickets+=10
-      card.querySelector('span').textContent=movie.tickets
-      updateTickets(movie)
-    })
+    
 }
 //fetch data from server
 function fetchMovies(url){
