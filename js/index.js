@@ -33,7 +33,7 @@ function renderMovie(movie){
     <p> $<span class ="description">${movie.description}</span>
     </p>
     </div>
-    <div class="buttond">
+    <div class="button">
     <button> buy ticket </button>
     </div>
 

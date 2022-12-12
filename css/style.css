@@ -1,4 +1,5 @@
 body{
+    column-count: auto;
     margin: auto;
     color: black;
     background-color: gray;
@@ -7,9 +8,11 @@ body{
     text-align: center;
     color: burlywood;
     column-count: 1;
+    background-color: black;
 }
 
 img{
+    
     max-width: 600px;
     max-height: 400px;
     
@@ -20,9 +23,8 @@ img{
 }
 .card{
     
-    text-align: right;
+    text-align: center;
     column-count: 1;
-}
-.content{
-    text-align: right;
+    font-size: medium;
+    font-style: italic;
 }
