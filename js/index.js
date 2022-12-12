@@ -1,6 +1,6 @@
 // Your code here
 let url = 'http://localhost:3000/films'
-const listHolder = document.getElementById('films')
+const filmTime = document.getElementById('films')
 document.addEventListener('DOMContentLoaded', ()=>{
     document.getElementsByClassName('film item')
     fetchMovies(url)
@@ -70,12 +70,12 @@ function displayMovie(movie){
     const li = document.createElement('li')
     li.style.cursor="pointer"
     li.textContent= (movie.title).toUpperCase()
-    listHolder.appendChild(li)
+    filmTime.appendChild(li)
     addClickEvent()
 }
 // event listeners
 function addClickEvent(){
-    let children=listHolder.children
+    let children=filmTime.children
     // console.log(children)
 
     for(let i=0; i<children.length; i++){
