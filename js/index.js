@@ -26,7 +26,7 @@ function renderMovie(movie){
     // add a movie
     let card = document.createElement('new')
     card.className ='card'
-    card.innerHTML =`
+    card.textContent =`
     <img src="${movie.posterurl}">
     <div class ="content">
     <h4>${movie.name}</h4>
@@ -69,7 +69,7 @@ function displayMovie(movie){
    
     const li = document.createElement('li')
     li.style.cursor="pointer"
-    li.innerHTML= (movie.title).toUpperCase()
+    li.textContent= (movie.title).toUpperCase()
     filmTime.appendChild(li)
     addClickEvent()
 }
@@ -87,7 +87,7 @@ function addClickEvent(){
 
             .then(res => res.json())
             .then(movie => {
-                document.getElementById('buy-ticket').innerHTML = 'Buy Ticket'
+                document.getElementById('buy-ticket').textContent = 'Buy Ticket'
                 setUpMovieDetails(movie)
             })
 
@@ -100,28 +100,28 @@ function setUpMovieDetails(childMovie){
     preview.src = childMovie.poster;
 
     const movieTitle = document.querySelector('#title');
-    movieTitle.innerHTML = childMovie.title;
+    movieTitle.textContent = childMovie.title;
     const movieTime = document.querySelector('#runtime');
-    movieTime.innerHTML = `${childMovie.runtime} minutes`;
+    movieTime.textContent = `${childMovie.runtime} minutes`;
     const movieDescription = document.querySelector('#film-info');
-    movieDescription.innerHTML = childMovie.description;
+    movieDescription.textContent = childMovie.description;
     const showTime = document.querySelector('#showtime')
-    showTime.tinnerHTML  = childMovie.showtime;
+    showTime.textContent = childMovie.showtime;
     const tickets  = document.querySelector('#ticket-num')
-    tickets.tinnerHTML  = childMovie.capacity -childMovie.tickets_sold;
+    tickets.textContent = childMovie.capacity -childMovie.tickets_sold;
 }
 //number of tickets remaining
 const btn = document.getElementById('buy-ticket')
 
         btn.addEventListener('click', function(e){
-            let remTickets = document.querySelector('#ticket-num').tinnerHTML 
+            let remTickets = document.querySelector('#ticket-num').textContent
             e.preventDefault()
             if(remTickets > 0){
-                document.querySelector('#ticket-num').innerHTML   = remTickets-1
+                document.querySelector('#ticket-num').textContent  = remTickets-1
                 
             }
-            // change the button to sold-out
+            // change the button
             else if(parseInt(remTickets, 10)===0){
-                btn.tinnerHTML  = 'Sold Out'
+                btn.textContent = 'Sold Out'
             }
     })
