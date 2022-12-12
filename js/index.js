@@ -2,10 +2,44 @@
 let url = 'http://localhost:3000/films'
 const listHolder = document.getElementById('films')
 document.addEventListener('DOMContentLoaded', ()=>{
-    document.getElementsByClassName('film item')[0].remove()
+    document.getElementsByClassName('film item')
     fetchMovies(url)
 })
+// event handlers
+function handleSubmit(e){
+    e.preventDefault()
+    let movieobj ={
+        title:e.target.title.value,
+        runtime:e.target.runtime.value,
+        capacity:e.target.capacity.value,
+        showtime:e.target.showtime.value,
+        tickets_sold:e.target.tickets_sold.value,
+        description:e.target.description.value,
+        poster:e.target.posterurl.value
+    }
 
+renderMovie(movieobj)
+addmovie(movieobj)
+}
+//DOM Render function
+function renderMovie(movie){
+    // add a movie
+    let card = document.createElement('new')
+    card.className ='card'
+    card.textContent =`
+    <img src="${movie.posterurl}">
+    <div class ="content">
+    <h4>${movie.name}</h4>
+    <p> $<span class ="description">${movie.description}</span>
+    </p>
+    </div>
+    <div class="buttond">
+    <button> buy ticket </button>
+    </div>
+
+    `
+    
+}
 //fetch data from server
 function fetchMovies(url){
     fetch(url)
@@ -15,9 +49,21 @@ function fetchMovies(url){
             displayMovie(movie)
         });
     })
-    addmovie(movieobj)
+   
 }
-// post requests
+// post request
+function addmovie(movieobj){
+    
+    fetch(url,{
+        method:'POST',
+        headers: {
+            "content-Type":"application/json"
+        },
+        body:JSON.stringify(movieobj)
+    })
+    .then(response => response.json())
+    .then(movie => console.log(movie))
+}
 // displaying the movies
 function displayMovie(movie){
    
