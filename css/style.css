@@ -2,27 +2,30 @@ body{
     column-count: auto;
     margin: auto;
     color: black;
-    background-color: gray;
+    background-color: burlywood;
 }
 .navbar{
     text-align: center;
     color: burlywood;
     column-count: 1;
     background-color: black;
+    font-size: medium;
+    font-style: italic;
 }
 
 img{
-    
+    margin-top: 10px;
     max-width: 600px;
     max-height: 400px;
     
 }
 .picture{
     text-align: center;
+    margin: 10px;
     float: left;
 }
 .card{
-    
+    margin-top: 30px;
     text-align: center;
     column-count: 1;
     font-size: medium;
