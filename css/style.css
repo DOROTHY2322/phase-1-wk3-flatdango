@@ -31,6 +31,10 @@ img{
     font-size: medium;
     font-style: italic;
 }
+.film-info{
+    text-align: left;
+  
+}
  .button{
     color: maroon;
  }
