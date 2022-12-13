@@ -94,6 +94,10 @@
 
 
      - select your branch in our case its the main branch,then save.
+
+ - To acces the live page:
+
+        - https://dorothy2322.github.io/phase-1-wk3-flatdango/    
      
 
 
