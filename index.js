@@ -1,5 +1,5 @@
 // Your code here
-let url = 'https://phase-1-wk3-flatdango.vercel.app/db.json'
+let url = 'https://phase-1-wk3-flatdango.vercel.app/project/db.json'
 const listHolder = document.getElementById('films')
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Create fetch function
 function fetchMovies(url) {
-    fetch('https://phase-1-wk3-flatdango.vercel.app/db.json')
+    fetch('https://phase-1-wk3-flatdango.vercel.app/project/db.json')
         .then(response => response.json())
         .then(movies => {
             movies.films.forEach(movie => {
@@ -49,7 +49,6 @@ function addClickEvent(){
         })
     }
 }
-
 function setUpMovieDetails(childMovie) {
     const preview = document.getElementById('poster')
     preview.src = childMovie.poster;
