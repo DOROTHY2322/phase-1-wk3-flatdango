@@ -97,7 +97,7 @@
 
  - To acces the live page:
 
-        - https://dorothy2322.github.io/phase-1-wk3-flatdango/    
+        - http://phase-1-wk3-flatdango.vercel.app/   
      
 
 
