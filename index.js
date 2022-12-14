@@ -38,7 +38,7 @@ function addClickEvent(){
         // console.log(child)
 
         child.addEventListener('click',() => {
-            fetch(`${"https://phase-1-wk3-flatdango.vercel.app/db.json"}/${i+1}`)
+            fetch(`${url}/${i+1}`)
 
             .then(res => res.json())
             .then(movie => {
