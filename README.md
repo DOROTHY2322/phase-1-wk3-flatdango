@@ -48,7 +48,7 @@
 
         - npm install -g json-server
         
- - Create a db.json file with some data i.e in our case we are using flatadango data
+ - Create a db.json file with some data i.e in our case we are using flatdango data
 
  - To start json server
 
