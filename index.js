@@ -1,17 +1,23 @@
-// Your code here
+// Define the url variable in the current scope
 let url = 'https://phase-1-wk3-flatdango.vercel.app/project/db.json'
-const listHolder = document.getElementById('films')
+//get a reference to the list element
+const listHolder = document.querySelector('.films ul');
+//a reference to the movie poster
+document.querySelector('#poster');
+
 document.addEventListener('DOMContentLoaded', () => {
 
-    document.getElementsByClassName('film item')
+    
     fetchMovies(url)
+
 })
 
-//Create fetch function
+    //Create fetch function
 function fetchMovies(url) {
-    fetch('https://phase-1-wk3-flatdango.vercel.app/project/db.json')
+    fetch(url)
         .then(response => response.json())
         .then(movies => {
+            //loop through the moviesand call the displaymovie()for each movie
             movies.films.forEach(movie => {
                 displayMovie(movie)
             });
@@ -26,10 +32,17 @@ function displayMovie(movie) {
     li.style.cursor = "pointer"
     li.textContent = (movie.title).toUpperCase()
     listHolder.appendChild(li)
-    addClickEvent()
+    //add a click event listener to the list item
+    li.addEventListener('click',(event)=>{
+        //update the movie poster element to display the clicked movies poster
+        poster.src = movie.poster;
+        //call the addclickevent() function to get the movie details
+        addClickEvent(event)
+    })
+    
 }
 
-function addClickEvent(){
+function addClickEvent(url){
     let children=listHolder.children
     // console.log(children)
 
@@ -38,7 +51,9 @@ function addClickEvent(){
         // console.log(child)
 
         child.addEventListener('click',() => {
-            fetch(`${url}/${i+1}`)
+            
+            fetch(`${'https://phase-1-wk3-flatdango.vercel.app/project/db.json'}/${i+1}`)
+           
 
             .then(res => res.json())
             .then(movie => {
@@ -49,6 +64,7 @@ function addClickEvent(){
         })
     }
 }
+addClickEvent(url)
 function setUpMovieDetails(childMovie) {
     const preview = document.getElementById('poster')
     preview.src = childMovie.poster;
@@ -77,3 +93,7 @@ btn.addEventListener('click', function (e) {
         btn.textContent = 'Sold Out'
     }
 })
+
+   
+
+
